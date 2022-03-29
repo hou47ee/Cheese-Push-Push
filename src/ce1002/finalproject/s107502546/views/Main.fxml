@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="700.0" style="-fx-background-image: url(&quot;file:///D:/NCU/freshman/下/計實/HW/ce1002.finalproject.s107502546/src/ce1002/finalproject/s107502546/images/background.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.finalproject.s107502546.controller.Main">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="403.0" layoutY="256.0" mnemonicParsing="false" onAction="#Start" prefHeight="63.0" prefWidth="235.0" style="-fx-background-color: #ffb3d8;" text="Start" textAlignment="CENTER" textFill="#aa4070">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow height="7.0" radius="3.0" spread="1.0" width="7.0" />
+         </effect>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="403.0" layoutY="344.0" mnemonicParsing="false" onAction="#Exit" prefHeight="59.0" prefWidth="235.0" style="-fx-background-color: #ffb3d8;" text="Exit" textAlignment="CENTER" textFill="#aa4070">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow height="7.0" radius="3.0" spread="1.0" width="7.0" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="314.0" fitWidth="305.0" layoutX="26.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" rotate="0.7">
+         <image>
+            <Image url="@../images/mainbear2.png" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="TEXT_ONLY" layoutX="37.0" layoutY="-33.0" prefHeight="161.0" prefWidth="282.0" text="Cheese">
+         <font>
+            <Font name="Chiller" size="120.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.8778625844999124" startX="1.0" startY="0.4236642458966672">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#fdfafa" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="22.45" radius="10.4725" spread="1.0" width="21.44" />
+         </effect>
+      </Label>
+      <Label layoutX="196.0" layoutY="67.0" text="Push Push">
+         <font>
+            <Font name="Chiller" size="120.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.9274809123905561" startX="1.0" startY="0.44274817896253293">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#fdfafa" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="18.84" radius="8.379999999999999" spread="1.0" width="16.68" />
+         </effect>
+      </Label>
+      <Button alignment="CENTER" layoutX="585.0" layoutY="2.0" mnemonicParsing="false" onAction="#Help" prefHeight="213.0" prefWidth="128.0" style="-fx-background-image: url(&quot;file:///D:/NCU/freshman/下/計實/HW/ce1002.finalproject.s107502546/src/ce1002/finalproject/s107502546/images/help.png&quot;); -fx-background-repeat: no-repeat; -fx-background-size: 120; -fx-background-color: transparent;" text="Help" textFill="#fff5a8">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow height="15.0" radius="7.0" width="15.0" />
+         </effect>
+      </Button>
+      <Pane fx:id="help" layoutX="135.0" layoutY="100.0" prefHeight="241.0" prefWidth="450.0" style="-fx-background-color: #ff498b; -fx-border-color: black; -fx-border-width: 2.5;" visible="false">
+         <effect>
+            <DropShadow height="60.0" radius="29.5" width="60.0" />
+         </effect>
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Use keyboard to control up, down,  left, right&#10;To push the cheese to the place of heart&#10;" textAlignment="CENTER" textFill="#253c39">
+               <font>
+                  <Font name="Chiller" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="122.0" fitWidth="112.0" layoutX="53.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/help2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="122.0" layoutY="47.0" textAlignment="CENTER" textFill="#253c39">
+               <font>
+                  <Font name="Chiller" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="68.0" layoutX="201.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cheese1.png" />
+               </image>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" spread="0.58" width="10.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="91.0" fitWidth="68.0" layoutX="313.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/heart.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="165.0" layoutY="149.0" text="→">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="280.0" layoutY="149.0" text="→">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

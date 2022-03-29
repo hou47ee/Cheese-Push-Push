@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.finalproject.s107502546.controller.map">
+   <children>
+      <GridPane fx:id="grid" prefHeight="430.0" prefWidth="700.0" style="-fx-background-image: url(&quot;file:///D:/NCU/freshman/下/計實/HW/ce1002.finalproject.s107502546/src/ce1002/finalproject/s107502546/images/背景2.jpg&quot;); -fx-background-size: 700; -fx-background-position: center;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Pane fx:id="finish" layoutX="125.0" layoutY="65.0" prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: #ff498b; -fx-border-color: black; -fx-border-width: 2.5;" visible="false">
+         <effect>
+            <DropShadow height="60.0" radius="29.5" width="60.0" />
+         </effect>
+         <children>
+            <Label layoutX="148.0" text="You Win!!!&#10;" textAlignment="CENTER" textFill="#253c39">
+               <font>
+                  <Font name="Chiller" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="122.0" fitWidth="112.0" layoutX="66.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/TW1237339.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="122.0" layoutY="47.0" text="Congratulation" textAlignment="CENTER" textFill="#253c39">
+               <font>
+                  <Font name="Chiller" size="48.0" />
+               </font>
+            </Label>
+            <Button layoutX="32.0" layoutY="228.0" mnemonicParsing="false" onAction="#Back" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #ffb3d8; -fx-border-color: black; -fx-background-radius: 5; -fx-border-width: 1; -fx-border-radius: 3;" text="Back " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="261.0" layoutY="228.0" mnemonicParsing="false" onAction="#Next" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #ffb3d8; -fx-background-radius: 5; -fx-border-color: black; -fx-border-image-width: 2; -fx-border-radius: 3;" text="Next Game" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </Button>
+            <ImageView fx:id="star" fitHeight="150.0" fitWidth="200.0" layoutX="201.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Button focusTraversable="false" layoutY="-10.0" mnemonicParsing="false" onAction="#Reset" prefHeight="122.0" prefWidth="71.0" style="-fx-background-image: url(&quot;file:///D:/NCU/freshman/下/計實/HW/ce1002.finalproject.s107502546/src/ce1002/finalproject/s107502546/images/reset.png&quot;); -fx-background-repeat: no-repeat; -fx-background-color: transparent; -fx-background-size: 100;" text="&#10;&#10;Reset&#10;" textFill="#f7f692" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button contentDisplay="CENTER" focusTraversable="false" layoutX="610.0" layoutY="325.0" mnemonicParsing="false" onAction="#Pause" prefHeight="136.0" prefWidth="105.0" style="-fx-background-image: url(&quot;file:///D:/NCU/freshman/下/計實/HW/ce1002.finalproject.s107502546/src/ce1002/finalproject/s107502546/images/pause.png&quot;); -fx-background-repeat: no-repeat; -fx-background-color: transparent; -fx-background-size: 110;" text="&#10;&#10;Pause&#10;&#10;" textFill="#f7f692" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Pane fx:id="pause" layoutX="175.0" layoutY="110.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #ff498b; -fx-border-color: black; -fx-border-width: 2.5;" visible="false">
+         <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0" />
+         </effect>
+         <children>
+            <Button focusTraversable="false" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#Conti" prefHeight="178.0" prefWidth="182.0" style="-fx-background-image: url(&quot;file:///D:/NCU/freshman/下/計實/HW/ce1002.finalproject.s107502546/src/ce1002/finalproject/s107502546/images/conti.png&quot;); -fx-background-position: top right; -fx-background-repeat: no-repeat; -fx-background-color: transparent; -fx-background-size: 135;" text="&#10;&#10;Continue&#10;" textFill="#f7f692" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button focusTraversable="false" layoutX="170.0" layoutY="20.0" mnemonicParsing="false" onAction="#menu" prefHeight="189.0" prefWidth="153.0" style="-fx-background-image: url(&quot;file:///D:/NCU/freshman/下/計實/HW/ce1002.finalproject.s107502546/src/ce1002/finalproject/s107502546/images/menu.png&quot;); -fx-background-repeat: no-repeat; -fx-background-color: transparent; -fx-background-size: 150;" text="&#10;&#10;Menu&#10;" textFill="#f7f692" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label fx:id="Step" layoutX="10.0" layoutY="375.0" textFill="#f7f692">
+         <font>
+            <Font name="Chiller" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
